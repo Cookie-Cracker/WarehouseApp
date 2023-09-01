@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Martainer Inc. Scanning Tools</string>
+    <string name="title_activity_login">Login</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="app_name1">Login Template</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="button_sign_in">Sign in</string>
+    <string name="button_clear">Clear Data</string>
+    <string name="button_sign_up">Sign up</string>
+    <string name="button_send">Send</string>
+    <string name="text_forgot_password">Forgot password?</string>
+    <string name="text_signin_message">Hello, sign in to your account</string>
+    <string name="text_signin_social_media">Or Sign in using social media</string>
+    <string name="text_signup_social_media">Or Sign up using social media</string>
+    <string name="text_signin_signup">Don\'t have an account? <b>Sign up</b></string>
+    <string name="text_signup_terms">By signing up, you agree to our <b>terms and conditions</b></string>
+    <string name="text_signup_message">Hello, let\'s set up your account</string>
+
+    <string name="text_forgot_password_title">Forgot password? No worries</string>
+    <string name="text_forgot_password_message">We will send you a link to reset your password</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">Phone</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+
+    <string name="app_company_title">Martainer Inc.</string>
+    <string name="app_subtitle">Warehouse Scanning Tools</string>
+    <string name="app_subtitle_appselector">Warehouse App Selector</string>
+    <string name="app_subtitle_smallparcel">Small Parcel Scanning Tool</string>
+    <string name="app_subtitle_stuffing">Warehouse Stuffing Scanning Tool</string>
+    <string name="app_subtitle_locations">Warehouse Storage Locations Tool</string>
+    <string name="app_subtitle_mainreceipt">Main Receipt Scanning Tool</string>
+    <string name="app_subtitle_visitorslog">Visitors Log</string>
+
+    <string name="app_connection_string">Data Source=kingocean.database.windows.net;Initial Catalog=SCSolution;User ID=kingadmin;Password=!King@cean*;Connection Timeout=600</string>
+
+    <string-array name="companies">
+        <item>Martainer, Inc.</item>
+        <item>Caribconex, LLC</item>
+        <item>ES Windows Colombia Warehouse</item>
+        <item>South Terminal</item>
+    </string-array>
+
+    <string-array name="warehouses">
+        <item>MARTAINER, INC.|1026</item>
+        <item>*WAREHOUSE**|25986</item>
+        <item>CARIBCONEX, LLC|44131</item>
+        <item>CRANE WORLDWIDE LOGISTICS|69982</item>
+        <item>ES WINDOWS COLOMBIA WAREHOUSE|998000</item>
+        <item>MATADERO GARCIA SARITA|119731</item>
+        <item>MIDPORT TERMINALS|31648</item>
+        <item>SOUTH TERMINAL|1151</item>
+        <item>WAREHOUSE|36135</item>
+    </string-array>
+    <string-array name="repackType">
+        <item>D-Container</item>
+        <item>E-Container</item>
+        <item>EH-Container</item>
+    </string-array>
+
+
+    <string name="title_activity_app_selector">AppSelector</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

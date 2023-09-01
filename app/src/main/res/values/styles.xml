@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Button1" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/button1_bg</item>
+        <item name="android:minWidth">200dp</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Button2" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/button1_bg</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="Button3Red" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/button_red_bg</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="Button3Blue" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/button_blue_bg</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="Button3LightBlue" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/button1_bg</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="TextyButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TransparentToolbar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="DialogAlertThemeRed" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/md_red_900</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textColorPrimary">@color/md_yellow_600</item>
+        <!-- Text Color for title and message ??? -->
+        <item name="colorOnSurface">@color/md_light_green_A400</item>
+    </style>
+
+    <style name="DialogAlertThemeGreen" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/md_light_green_800</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textColorPrimary">@color/md_yellow_600</item>
+    </style>
+
+    <!--  REGION CUSTOM ADDED-->
+    <style name="dock_receipt_value_label">
+        <item name="android:textColor">@color/label_light_gray</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="dock_receipt_value_field">
+        <item name="android:textColor">@color/label_dark_gray</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="activity_main_title">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <!-- Add more attributes if needed -->
+    </style>
+
+<!--    <style name="chip_style_totals">-->
+<!--        <item name="android:textColor">@color/md_white_1000</item>-->
+<!--        <item name="chipBackgroundColor">@color/chip_totals</item>-->
+<!--        <item name="chipCornerRadius">16dp</item>-->
+<!--        <item name="chipIcon">@null</item>-->
+<!--        <item name="chipIconTint">@color/md_white_1000</item>-->
+<!--        <item name="chipStrokeColor">@color/label_light_gray</item>-->
+<!--        <item name="chipStrokeWidth">0.5dp</item>-->
+<!--        <item name="closeIconVisible">false</item>-->
+<!--    </style>-->
+    <style name="chip_style_totals">
+        <item name="android:textSize">10sp</item> <!-- Adjust text size -->
+
+        <item name="chipBackgroundColor">@color/chip_totals</item>
+        <item name="chipCornerRadius">12dp</item> <!-- Adjust corner radius -->
+        <item name="chipIcon">@null</item>
+        <item name="chipIconTint">@color/md_white_1000</item>
+        <item name="chipStrokeColor">@color/label_light_gray</item>
+        <item name="chipStrokeWidth">0.5dp</item>
+        <item name="closeIconVisible">false</item>
+    </style>
+
+    <style name="chip_style_repack_count">
+        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="chipBackgroundColor">@color/md_blue_800</item>
+        <item name="chipCornerRadius">16dp</item>
+        <item name="chipIcon">@null</item>
+        <item name="chipIconTint">@color/md_white_1000</item>
+        <item name="chipStrokeColor">@color/label_light_gray</item>
+        <item name="chipStrokeWidth">0.5dp</item>
+        <item name="closeIconVisible">false</item>
+    </style>
+
+    <style name="chip_style_repack_count_smaller">
+        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="chipBackgroundColor">@color/md_blue_800</item>
+        <item name="chipCornerRadius">12dp</item> <!-- Adjust the corner radius for a smaller chip -->
+        <item name="chipIcon">@null</item>
+        <item name="chipIconTint">@color/md_white_1000</item>
+        <item name="chipStrokeColor">@color/label_light_gray</item>
+        <item name="chipStrokeWidth">0.5dp</item>
+        <item name="closeIconVisible">false</item>
+        <item name="android:textSize">12sp</item> <!-- Adjust the text size for a smaller chip -->
+    </style>
+
+    <style name="CustomAlertDialogStyleAlert" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Customize the dialog background, text color, button styles, etc. -->
+        <item name="android:windowBackground">@drawable/custom_dialog_background_alert</item>
+        <item name="android:textColorPrimary">@color/md_yellow_400</item>
+        <!-- Add more customizations as needed -->
+    </style>
+
+    <style name="CustomAlertDialogStyleGeneral" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Customize the dialog background, text color, button styles, etc. -->
+        <item name="android:windowBackground">@drawable/custom_dialog_background_general</item>
+        <item name="android:textColorPrimary">@color/custom_dialog_text</item>
+        <!-- Add more customizations as needed -->
+    </style>
+
+    <style name="CustomProgressBar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:indeterminateTint" tools:targetApi="lollipop">@color/md_red_700</item>
+        <!-- Add more attributes as per your styling preferences -->
+    </style>
+
+    <style name="Widget.Theme.FastApp.MyView" parent="">
+        <item name="android:background">@color/gray_400</item>
+        <item name="exampleColor">@color/light_blue_400</item>
+    </style>
+    <style name="ListTypeLabelStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item> <!-- Change text color -->
+        <item name="android:textSize">16sp</item> <!-- Change text size -->
+        <!-- You can add more attributes here as needed -->
+    </style>
+
+    <style name="DockReceiptValueFieldStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/rounded_gradient_background</item>
+        <item name="android:textColor">#FEFFFF</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingStart" tools:targetApi="jelly_bean_mr1">8dp</item>
+        <item name="android:paddingEnd" tools:targetApi="jelly_bean_mr1">8dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <!-- Add more attributes as needed -->
+    </style>
+
+    <style name="ChipLabelsTotals_Main">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:background">@drawable/chip_label_bg_blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ChipLabelsTotals_Repack_Pkgs_Blue" parent="ChipLabelsTotals_Main">
+
+        <item name="android:background">@drawable/chip_label_bg_blue</item>
+
+    </style>
+
+    <style name="ChipLabelsTotals_Repack_Pkgs_Green" parent="ChipLabelsTotals_Main">
+
+        <item name="android:background">@drawable/chip_label_bg_green</item>
+
+    </style>
+    <style name="ChipLabelsTotals_Repack_Pkgs_Orange" parent="ChipLabelsTotals_Main">
+
+        <item name="android:background">@drawable/chip_label_bg_orange</item>
+
+    </style>
+
+    <style name="ChipLabelsTotals_Repack_Pkgs_Yellow" parent="ChipLabelsTotals_Main">
+
+        <item name="android:background">@drawable/chip_label_bg_yellow</item>
+        <item name="android:textColor">@color/md_black_1000</item>
+        <item name="android:textSize">10sp</item>
+
+    </style>
+
+    <style name="ChipLabelsTotals_Repack_CF" parent="ChipLabelsTotals_Main">
+
+        <item name="android:background">@drawable/chip_label_bg_orange</item>
+
+    </style>
+
+
+    <style name="ImageGalleryMetadata">
+        <item name="android:textColor">@color/md_green_400</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:paddingRight">12dp</item>
+    </style>
+    <style name="ImageGalleryMetadataLabel" parent="ImageGalleryMetadata">
+        <item name="android:textColor">@color/md_white_1000</item>
+
+    </style>
+
+    <!--  REGION END CUSTOM ADDED-->
+</resources>

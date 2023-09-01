@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/base_layout_repack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    tools:context=".activities.RepackActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/cardViewTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:paddingBottom="5dp">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/repackTitle"-->
+<!--                style="@style/activity_main_title"-->
+<!--                android:layout_width="wrap_content"-->
+
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="Repack" />-->
+
+
+<!--        </LinearLayout>-->
+
+        <androidx.cardview.widget.CardView
+            style="@style/FastAppCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        style="@style/LabelTextViewStyle"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="Type"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textSize="20sp" />
+
+                    <Spinner
+                        android:id="@+id/spinnerRepackType"
+                        android:layout_width="179dp"
+                        android:layout_height="match_parent"
+                        android:foregroundTint="@color/md_green_50"
+                        android:spinnerMode="dropdown" />
+
+                    <Button
+                        android:id="@+id/btClear"
+                        android:layout_width="50dp"
+                        android:layout_height="36dp"
+                        android:background="@android:color/transparent"
+
+
+                        android:drawableLeft="@drawable/baseline_refresh_24" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_margin="@dimen/card_divider_margin"
+                    android:background="@color/label_light_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        style="@style/LabelTextViewStyle"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="RePack"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/etDrContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_background"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:paddingLeft="8dp"
+
+                        android:textColor="@color/md_white_1000" />
+
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/btScan"-->
+                    <!--                        android:layout_width="50dp"-->
+                    <!--                        android:layout_height="36dp"-->
+                    <!--                        android:background="@android:color/transparent"-->
+
+
+                    <!--                        android:drawableLeft="@drawable/baseline_document_scanner_24" />-->
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        style="@style/LabelTextViewStyle"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="DR"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/etDrToRepack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_background"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:paddingLeft="8dp"
+                        android:textColor="@color/md_white_1000" />
+
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/btRepack"-->
+                    <!--                        android:layout_width="50dp"-->
+                    <!--                        android:layout_height="36dp"-->
+                    <!--                        android:background="@android:color/transparent"-->
+                    <!--                        android:drawableLeft="@drawable/baseline_document_scanner_24" />-->
+                </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.cardview.widget.CardView>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="4dp" />
+
+        <androidx.cardview.widget.CardView
+            style="@style/FastAppCardView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Repacked:" />
+
+                    <TextView
+                        android:id="@+id/tvRepacked"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipRepackCount"
+                        style="@style/chip_style_repack_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <!--                <View-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="0.5dp"-->
+                <!--                    android:layout_margin="@dimen/card_divider_margin"-->
+                <!--                    android:background="@color/label_light_gray" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvDrsRepacked"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="4dp" />
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewTotal"
+        style="@style/FastAppCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal"
+
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Packages" />
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipTotalPackages"
+                style="@style/chip_style_totals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:text="Cubic Feet" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipTotalCubicFeet"
+                style="@style/chip_style_totals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

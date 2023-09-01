@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_background"
+
+    >
+
+    <View
+        android:id="@+id/completionBar"
+        android:layout_width="0dp"
+        android:layout_height="8dp"
+        android:background="@color/progressBackgroundColor"
+        android:layout_centerVertical="true"
+
+        />
+
+    <View
+        android:id="@+id/completionIndicator"
+        android:layout_width="0dp"
+        android:layout_height="8dp"
+        android:background="@color/progressIndicatorColor"
+        android:layout_centerVertical="true" />
+    <!-- Total Items label -->
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.kingocean.warehouseapp.beta",
+  "variantName": "beta",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "versionCode": 2023,
+      "versionName": "3.31.5",
+      "outputFile": "WarehouseApp v.2023.3.31.5--.beta.apk"
+    }
+  ]
+}

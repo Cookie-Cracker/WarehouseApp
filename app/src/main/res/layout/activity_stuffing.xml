@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StuffingActivity">
+
+<!--    <TextView-->
+<!--        android:id="@+id/lbTitle"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/app_subtitle_stuffing"-->
+<!--        android:textColor="@color/md_orange_900"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        tools:layout_editor_absoluteY="87dp" />-->
+
+<!--    <Spinner-->
+<!--        android:id="@+id/cbWarehouse"-->
+<!--        android:layout_width="336dp"-->
+<!--        android:layout_height="34dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:textSize="20dp"-->
+<!--        android:background="@color/md_yellow_A700"-->
+<!--        android:textColor="@color/md_light_blue_600"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.493"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/lbTitle" />-->
+
+
+    <Spinner
+        android:id="@+id/cbWarehouse"
+        android:layout_width="336dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/md_yellow_A700"
+        android:textColor="@color/md_light_blue_600"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="336dp"
+        android:layout_height="380dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbWarehouse">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:id="@+id/lbBooking"
+                android:layout_width="95dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="0dp"
+                android:minHeight="50dp"
+                android:text="Booking #"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="31dp" />
+
+            <EditText
+                android:id="@+id/editTextBK"
+                android:layout_width="132dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:minHeight="50dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@drawable/edit_text_color"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="30dp" />
+
+            <TextView
+                android:id="@+id/lbBookingSymbol"
+                android:layout_width="15dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="5dp"
+                android:minHeight="50dp"
+                android:text="#"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="31dp" />
+
+            <EditText
+                android:id="@+id/editTextStuffing"
+                android:layout_width="85dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:minHeight="50dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@drawable/edit_text_color"
+                android:textSize="20sp"
+                android:gravity="right"
+                tools:layout_editor_absoluteX="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/lbContainer"
+                android:layout_width="95dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="0dp"
+                android:minHeight="50dp"
+                android:text="Container"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editTextContainer"
+                android:layout_width="147dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@drawable/edit_text_color"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="30dp" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="0dp"/>
+
+            <EditText
+                android:id="@+id/editTextEqType"
+                android:layout_width="85dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/edit_text_background"
+                android:gravity="right"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@drawable/edit_text_color"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/lbDRStuffed"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:minHeight="50dp"
+                android:text="DR #"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="31dp" />
+
+            <EditText
+                android:id="@+id/editTextDRStuffed"
+                android:layout_width="132dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@drawable/edit_text_color"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lbWeight"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:minHeight="50dp"
+                android:text="Weight"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="31dp" />
+
+            <EditText
+                android:id="@+id/editTextTotWeight"
+                android:layout_width="85dp"
+                android:layout_height="28dp"
+                android:background="@drawable/edit_text_background"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@drawable/edit_text_color"
+                android:textSize="20sp"
+                android:gravity="right" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="D/R"
+                android:backgroundTint="@color/md_blue_400"
+                android:textSize="10dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Length"
+                android:textSize="10dp"
+                android:gravity="right">
+            </TextView>
+
+            <TextView
+               android:layout_width="50dp"
+               android:layout_height="wrap_content"
+                android:text="Height"
+                android:textSize="10dp"
+                android:gravity="right">
+            </TextView>
+
+            <TextView
+               android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Width"
+                android:textSize="10dp"
+                android:gravity="right">
+            </TextView>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Nro"
+                android:textSize="10dp"
+                android:gravity="right">
+            </TextView>
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <GridView
+                    android:id="@+id/gridview1"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:layout_width="335dp"
+                    android:layout_height="match_parent">
+                </GridView>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/PostedBtn"
+                style="@style/Button2"
+                android:layout_width="11dp"
+                android:layout_height="match_parent"
+                android:text="Posted"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/lbPackages"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Pkgs"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lbPackagesCnt"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/label_bg"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingTop="0dp"
+                android:paddingRight="10dp"
+                android:text="0"
+                android:textColor="@color/md_yellow_400"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/lbPackages11"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="/"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/lbPackagesPendingCnt"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:background="@drawable/label_bg_red"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="0dp"
+                android:text="0"
+                android:textColor="@color/md_yellow_400"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="19dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/pendingDRBtn"
+                style="@style/Button2"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="Pending ?" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/lbTotalWeight"
+                android:layout_width="50dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="0dp"
+                android:minHeight="50dp"
+                android:text="Total"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editTextTotalWeight"
+                android:layout_width="105dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:minHeight="50dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@drawable/edit_text_color"
+                android:textSize="20sp"
+                android:gravity="right" />
+
+            <TextView
+                android:id="@+id/lbLB"
+                android:layout_width="25dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="5dp"
+                android:minHeight="50dp"
+                android:text="LB"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="31dp" />
+
+            <EditText
+                android:id="@+id/editTextTotalMeasure"
+                android:layout_width="105dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:minHeight="50dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@drawable/edit_text_color"
+                android:textSize="20sp"
+                android:gravity="right" />
+
+            <TextView
+                android:id="@+id/lbCF"
+                android:layout_width="25dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="5dp"
+                android:minHeight="50dp"
+                android:text="CF"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="31dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCamera"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/md_light_blue_50"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/lbTakePictureOf"
+                android:layout_width="106dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Take Picture Of Container Loading"
+                android:textSize="13sp" />
+
+            <ImageButton
+                android:id="@+id/takeAPictureBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_camera"
+                android:scaleX="1.5"
+                android:scaleY="1.5" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_leftarrow"
+                android:topLeftRadius="20dp"
+                android:topRightRadius="20dp"
+                android:rotation="180"
+                tools:ignore="MissingConstraints"></ImageView>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_containerloaded"
+                android:topLeftRadius="20dp"
+                android:topRightRadius="20dp"
+                android:layout_marginLeft="10dp"
+                tools:ignore="MissingConstraints"></ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Stuffing_logoutBtn"
+        style="@style/Button3Red"
+        android:layout_width="191dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:text="Exit Tool"
+        android:drawableLeft="@drawable/ic_powerwhite"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.027" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

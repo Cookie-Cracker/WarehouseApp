@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kingocean.warehouseapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="MWT"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FastApp">
+        <activity
+            android:name=".activities.DockReceiptsGallery"
+            android:exported="false" />
+        <activity
+            android:name=".activities.RepackPics"
+            android:exported="false"
+            android:label="Repack"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activities.AppsActivity"
+            android:exported="false"
+            android:label="Warehouse Tools" />
+        <activity
+            android:name=".activities.RepackActivity"
+            android:exported="false"
+            android:label="Repack"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".VisitorsLogActivity" />
+        <activity
+            android:name=".MainReceiptActivity"
+            android:label="Main Receipt" />
+        <activity
+            android:name=".LocationsActivity"
+            android:label="Warehouse Location" />
+        <activity
+            android:name=".StuffingActivity"
+            android:label="Stuffing" />
+        <activity
+            android:name=".ScanActivity"
+            android:label="Small Parcel Scanning" />
+        <activity android:name=".Welcome" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/title_activity_login" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.kingocean.warehouseapp.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="application"
+            android:value="stuffing" />
+    </application>
+
+</manifest>

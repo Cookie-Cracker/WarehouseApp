@@ -1,0 +1,21 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Gradient shape for the progress bar -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="@color/progress_bar_gradient_start_color"
+                android:endColor="@color/progress_bar_gradient_end_color"
+                android:type="linear"
+                android:angle="0" />
+        </shape>
+    </item>
+
+    <!-- Clip shape to show progress level -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <solid android:color="@color/progress_color" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>
